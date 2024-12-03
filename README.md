@@ -1,1 +1,2 @@
 # projectManagerActivity
+This code project is the project related to the manager 3 Day Project, in which a group of people (Nash and Carmello) are tasked to create a "thing" and document and manage the process. The idea we came up with is the creation of a Rock-Paper-Scissors game in C#. It has a scoring system and a full fleged game loop which the user can end at any point.
