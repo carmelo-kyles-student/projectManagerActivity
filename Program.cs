@@ -6,12 +6,12 @@ public static class Program
 {
     public static void Main(string[] args)
     {
-        Console.WriteLine("Hello! \n Welcome to the game! \nTo Start choose one of the three choices to throw out.");
+        Console.WriteLine("Hello! \nWelcome to the game! \nTo Start choose one of the three choices to throw out.");
         gameLoop();
 
         if (!(looping))
         {
-            Console.WriteLine("Game Over! \n Number of Wins: " + winCount + " \n Number Of Losses: " + lossCount);
+            Console.WriteLine("Game Over! \nNumber of Wins: " + winCount + " \nNumber Of Losses: " + lossCount+ " \nNumber Of Ties: " + tieCount);
         }
 
         else
@@ -22,6 +22,7 @@ public static class Program
     public static Random random = new Random();
     public static int winCount = 0;
     public static int lossCount = 0;
+    public static int tieCount = 0;
 
     public static bool looping;
     public static int GenerateRandomNumber() //generate a random number between 0 and 2 
