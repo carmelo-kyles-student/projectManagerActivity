@@ -6,25 +6,26 @@ public static class Program
 {
     public static void Main(string[] args)
     {
+        bool looping = true;
         Console.WriteLine("Hello! \nWelcome to the game! \nTo Start choose one of the three choices to throw out.");
-        gameLoop();
-
-        if (!(looping))
+        while(looping)
         {
-            Console.WriteLine("Game Over! \nNumber of Wins: " + winCount + " \nNumber Of Losses: " + lossCount+ " \nNumber Of Ties: " + tieCount);
-        }
-
-        else
-        {
-            gameLoop();
+            string yn = gameLoop();
+            if(yn.ToUpper() == "Y")
+            {
+                looping = true;
+            }
+            else
+            {
+                looping = false;
+                Console.WriteLine("Game Over! \nNumber of Wins: " + winCount + " \nNumber Of Losses: " + lossCount+ " \nNumber Of Ties: " + tieCount);
+            }
         }
     }
     public static Random random = new Random();
     public static int winCount = 0;
     public static int lossCount = 0;
     public static int tieCount = 0;
-
-    public static bool looping;
     public static int GenerateRandomNumber() //generate a random number between 0 and 2 
     {
 
@@ -49,7 +50,7 @@ public static class Program
         //2 sciscors
     }
 
-    public static void gameLoop()
+    public static string gameLoop()
     {
         int choice = 0;
         Console.WriteLine("Rock, Paper, or Scissors");
@@ -78,51 +79,57 @@ public static class Program
                 if (genNum == 0)
                 {
                     Console.WriteLine("tie");
+                    tieCount++;
                 }
                 else if (genNum == 1)
                 {
                     Console.WriteLine("lose");
+                    lossCount++;
 
                 }
                 else if (genNum == 2)
                 {
                     Console.WriteLine("win");
-
+                    winCount++;
                 }
                 break;
             case 1:
                 if (genNum == 0)
                 {
                     Console.WriteLine("win");
-                    break;
+                    winCount++;
                 }
                 if (genNum == 1)
                 {
                     Console.WriteLine("tie");
-                    break;
+                    tieCount++;
                 }
                 if (genNum == 2)
                 {
                     Console.WriteLine("loss");
-                    break;
+                    lossCount++;
                 }
                 break;
             case 2:
                 if (genNum == 0)
                 {
                     Console.WriteLine("loss");
+                    lossCount++;
                 }
                 else if (genNum == 1)
                 {
                     Console.WriteLine("win");
+                    winCount++;
                 }
                 else if (genNum == 2)
                 {
                     Console.WriteLine("tie");
+                    tieCount++;
                 }
                 break;
         }
 
-
+        Console.WriteLine("Y/N to going again?");
+        return Console.ReadLine();
     }
 }
