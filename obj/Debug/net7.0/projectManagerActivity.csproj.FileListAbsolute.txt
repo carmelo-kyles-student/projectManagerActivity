@@ -1,0 +1,15 @@
+C:\Users\cakye3c\projectManagerActivity\bin\Debug\net7.0\projectManagerActivity.exe
+C:\Users\cakye3c\projectManagerActivity\bin\Debug\net7.0\projectManagerActivity.deps.json
+C:\Users\cakye3c\projectManagerActivity\bin\Debug\net7.0\projectManagerActivity.runtimeconfig.json
+C:\Users\cakye3c\projectManagerActivity\bin\Debug\net7.0\projectManagerActivity.dll
+C:\Users\cakye3c\projectManagerActivity\bin\Debug\net7.0\projectManagerActivity.pdb
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.csproj.AssemblyReference.cache
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.AssemblyInfoInputs.cache
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.AssemblyInfo.cs
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.csproj.CoreCompileInputs.cache
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.dll
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\refint\projectManagerActivity.dll
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.pdb
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\projectManagerActivity.genruntimeconfig.cache
+C:\Users\cakye3c\projectManagerActivity\obj\Debug\net7.0\ref\projectManagerActivity.dll
