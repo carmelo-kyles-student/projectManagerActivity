@@ -6,6 +6,12 @@ public class GameLoop
     public static int lossCount = 0;
     public static int tieCount = 0;
     public static Random random = new Random();
+    /**
+    We wanted a simple yet effective way to create a new random number and to be able to print out the "AI's" choice
+    This function here was the first one we wanted to get finished as quickly as possible due to its necessity to the rest of the functions
+    
+    
+    **/
     public static int GenerateRandomNumber() //generate a random number between 0 and 2 
     {
 
@@ -29,6 +35,15 @@ public class GameLoop
         //1 paper 
         //2 sciscors
     }
+    /**
+    gameLoop
+    returns a string of Y or N which conntrols the looping of the game. 
+    starts by taking an input of a string of rock, paper, or scissors. 
+    then that gets converted into an int to help with ease of debugging and human readability
+    the use of switch statements was again also for better reading 
+    **/
+
+    
     public static string gameLoop()
     {
         int choice = 0;
@@ -54,7 +69,7 @@ public class GameLoop
 
         switch (choice)
         {
-            case 0:
+            case 0://IF PLAYER CHOOSES ROCK
                 if (genNum == 0)
                 {
                     Console.WriteLine("tie");
@@ -72,7 +87,7 @@ public class GameLoop
                     winCount++;
                 }
                 break;
-            case 1:
+            case 1://IF PLAYER CHOOSES PAPER
                 if (genNum == 0)
                 {
                     Console.WriteLine("win");
@@ -89,7 +104,7 @@ public class GameLoop
                     lossCount++;
                 }
                 break;
-            case 2:
+            case 2://IF PLAYER CHOOSES SCISSORS
                 if (genNum == 0)
                 {
                     Console.WriteLine("loss");
@@ -112,16 +127,16 @@ public class GameLoop
         return Console.ReadLine();
     }
 
-    public int getwinCount()
+    public int getWinCount()
     {
-        return winCount;
+        return winCount; //RETURNS THE COUNT OF WINS
     }
-    public int getlossCount()
+    public int getLossCount()
     {
-        return lossCount;
+        return lossCount;//RETURNS THE COUNT OF LOSSES
     }
-    public int gettieCount()
+    public int getTieCount()
     {
-        return tieCount;
+        return tieCount;//RETURNS THE COUNT OF TIES 
     }
 }
